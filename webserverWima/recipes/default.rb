@@ -12,7 +12,12 @@ package 'apache2' do
 end
 
 file '/var/www/html/index.html' do
-	content 'hello friends'
+# 	content 'hello friends'
+# 	action :create
+	content '<html>	
+	         <title>Welcome to chef trainning by network nuts </title>
+			 <h1>Welcome to Chef </h1>
+			 </html>'
 	action :create
 end
 
