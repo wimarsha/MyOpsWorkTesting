@@ -12,9 +12,9 @@ package 'apache2' do
 end
 
 cookbook_file '/var/www/html/index.html' do
-	source '/files/default/index.html'
+	source 'index.html'
 end
 
 service 'apache2' do
-	action [:enable, :start]
+	action [:start, :enable]
 end
