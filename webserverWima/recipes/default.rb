@@ -11,14 +11,8 @@ package 'apache2' do
 	action :install
 end
 
-file '/var/www/html/index.html' do
-# 	content 'hello friends'
-# 	action :create
-	content '<html>	
-	         <title>Welcome to chef trainning by network nuts </title>
-			 <h1>Welcome to Chef </h1>
-			 </html>'
-	action :create
+cookbook_file '/var/www/html/index.html' do
+	source 'index.html'
 end
 
 service 'apache2' do
