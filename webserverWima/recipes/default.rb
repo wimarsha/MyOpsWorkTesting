@@ -11,7 +11,7 @@ package 'apache2' do
 	action :install
 end
 
-file '/var/www/html/' do
+file '/var/www/html/index.html' do
 	content 'hello friends'
 	action :create
 end
