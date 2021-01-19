@@ -16,6 +16,6 @@ file '/var/www/html/' do
 	action :create
 end
 
-service 'httpd' do
+service 'apache2' do
 	action [:enable, :start]
 end
