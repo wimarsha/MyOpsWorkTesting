@@ -12,7 +12,7 @@ package 'apache2' do
 end
 
 cookbook_file '/var/www/html/index.html' do
-	source 'index.html'
+	source '/files/default/index.html'
 end
 
 service 'apache2' do
